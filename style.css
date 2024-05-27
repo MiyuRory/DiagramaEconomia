@@ -1,0 +1,33 @@
+/* Styling for the nodes (circles) */
+circle {
+    fill: #ddd; /* Light gray background */
+    stroke: #333; /* Dark gray border */
+    stroke-width: 2px;
+}
+
+/* Styling for the node text */
+circle text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    fill: #333; /* Dark gray text color */
+	color: #000000;
+    pointer-events: none; /* Make sure the text doesn't interfere with drag events */
+}
+
+/* Styling for the link text (polarity) */
+line text {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    fill: #000; /* Black text color */
+    pointer-events: none; /* Make sure the text doesn't interfere with drag events */
+}
+
+/* Styling for positive polarity */
+line[Polaridad="Positiva"] {
+    stroke: green;
+}
+
+/* Styling for negative polarity */
+line[Polaridad="Negativa"] {
+    stroke: red;
+}
